@@ -32,7 +32,7 @@ const generateNext = (prev: string[]): string[] => {
 let current = "9+8+7+6+5+4+3+2+1+0".split('');
 const last = "9_8_7_6_5_4_3_2_1_0".split('');
 
-export const getResult = (value: number): string => {
+export const findExpression = (value: number): string => {
   if (cache.has(value)) {
     return cache.get(value)!;
   }
